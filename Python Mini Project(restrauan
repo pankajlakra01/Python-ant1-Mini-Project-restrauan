@@ -1,0 +1,40 @@
+Menu = {
+    "Pizza":100,
+    "Cold Coffee" :80,
+    "tea":30,   
+    "HotCoffee":40,
+    "aaloo prantha" :60,
+    "Maggii":50,
+    "Noodles":100,
+}
+
+print("Welcome to PankajLakra restraunant, we proudly serve pure veg," )
+print("Please Select Your item from the menu\nMenu--\nPizza-100rs\nCold Coffee-80rs\ntea-30rs\nHotCoffee-40\naaloo prantha -60rs\nMaggii-50rs\nNoodles-100rs")
+
+
+Your_total = 0
+Item1 = input("please Select which item you want from the menu=")
+if Item1 in Menu:
+    
+    Your_total += Menu[Item1]
+    print(f"Your item {Item1} has been added to your order")
+else:
+    print(f"Sorry , currently this {Item1} is not available in your menu , please select From the menu only ")
+Another_order = input(f"Do want to Add Another Item Then plz type Yes\ NO--")
+if Another_order == "Yes":
+    Item2 = input("Please select your second order from the menu-")
+    if Item2 in Menu:
+
+    
+        Your_total += Menu[Item2]
+        print("Thanks for your visit")
+        print("And here your total amount is -",Your_total)
+    else:
+        print(f"This  {Item2} Is not available in my Menu")
+        
+
+else:
+    print("Thanks for your visit")
+    print("And here your total amount is -",Your_total)
+
+####In this project we have not used loops so that it is not asking till you declined, in next project you will get loops functions also in restrauant project 2
